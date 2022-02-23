@@ -1,0 +1,36 @@
+.Bouton_Choix{
+    display: flex; 
+    height:70px;
+    width:80%;
+    justify-content:left; 
+    border-radius:20px;
+    text-align: center;
+    margin:20px;
+    border:none;
+    padding :25px 10px 20px 10px;
+    box-shadow: 3px 3px 10px rgb(204, 204, 204); 
+    background-color:$colour_fond_gris_boutonchoix;
+    transform:scale(1);
+    transition:transform 500ms;
+    &:hover{
+        background-color: $colour_fond_mauve_boutonchoix;
+        &   i{
+            color:$colour_bulle;
+        }
+    }
+    & span{
+        font-size:14px;
+        margin-left: 15px;
+    }  
+    & i{
+    font-size: 15px;    
+    padding-left:10px;
+    padding-right:10px;
+    color:black;
+    }
+    &:active{
+        /*transform:scale(0.5);*/
+          @include Animation_Btn_Choix; 
+    }
+    
+}

@@ -1,0 +1,15 @@
+.Bouton_Nouveau{   
+    display:flex;
+    position:relative;                                           /* classe du bouton nouveau */
+    background-color: rgb(96, 226, 209);
+    color :rgba(31, 150, 104, 0.822);
+    font-weight: bold;
+    position:absolute;
+    left:75%;
+    bottom: 80%;
+    border-radius:5px;
+    p {
+        font-size: 11px;
+        padding:1px 5px 1px 5px;
+    }    
+    }
