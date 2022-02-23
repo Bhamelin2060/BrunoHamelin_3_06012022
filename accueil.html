@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+       
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons/utensils?style=solid">
+      <!-- <link rel="stylesheet" href="css/main.min.css"/>-->
+      <link rel="stylesheet" href="css/main.exp.css"/>
+      <title>OHMIFOOD debug</title>
+    </head>
+    <body> 
+     
+    <header> 
+        <h1>ohmyfood</h1>
+    </header>
+                <section>
+                    <div class="Localisation">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Paris, Bellevile</strong></p> 
+                    </div>
+                </section>
+                <section class="Explore">                        
+                    <h3>Réserver le menu qui vous convient</h3>
+                    <article>
+                        <div class="Decouverte">
+                            <p>Découvrez des restaurants d'exception,</p>
+                            <p>sélectionnés par nos soins</p>
+                        </div>
+                    </article>
+                    <button class="Bouton1"> Explorez nos restaurants </button>
+                </section>
+               
+                <section class="Choix">
+                    <h3>Fonctionnement</h3>
+                    <div class="Nav_Item"> 
+                        <button class="Bouton_Choix">
+                            <span class="Bulle">1</span>
+                            <i class="fas fa-mobile-alt"></i>
+                            <span><strong>Choisissez un restaurant</strong></span>  
+                        </button>
+                        <button class="Bouton_Choix">
+                            <span class="Bulle">2</span>
+                            <i class="fas fa-list"></i>  <!--composer le menu -->
+                            <span><strong>Composez votre menu</strong></span>
+                        </button>     
+                        <button class="Bouton_Choix">
+                            <span class="Bulle">3</span>
+                            <i class="fas fa-store"></i>    <!-- deguster-->
+                            <span><strong>Composez votre menu</strong></span>
+                        </button>  
+                    </div>
+                </section>
+                <section class="Liste_Restaurant">
+                    <div class="Titre1">
+                        <h2> Restaurants</h2>
+                    </div>    <!--fin Titre1-->
+                    <div id="Restaurants">      <!--   bannière des 4 restaurants-->
+                    <div class="Restaurant1">      <!--Section restaurant:Lapalette du gout-->
+                           <a class="nounderline" href="html/La_palette_du_gout.html"> <!--html/menu_a_la_francaise.html">  -->
+                          
+                                <div class="Container">
+                                     
+                                     <span class="Bouton_Nouveau"> Nouveau</span>  
+                                    <img class=" Banniere_Image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gout">
+                                </div>
+                                <div class="Banniere_description">
+                                    <div class="Identifiant">             <!-- Identification du restaurant 1-->
+                                     <h3>La palette du gout</h3> 
+                                     <p>Ménilmontant</p> 
+                                    </div>                                  <!-- Identification du restaurant 1-->    
+                                    <div class="Classement">    
+                                    <i class="far fa-heart"></i>
+                                    
+
+
+                                    </div>  <!--Fin classement premier restaurant--> 
+                                </div>   <!--Fin de bannière description-->   
+                            </a>  
+                    </div>                         <!-- fin Section restaurant:Lapalette du gout-->
+                   
+                    <div class="Restaurant1">      <!--Section restaurant:La note enchantée--> 
+                        <a class="nounderline" href="html/La_note_enchantee.html"> <!--html/menu_a_la_francaise.html">  -->
+                            <div class="Container"> <!-- Container -->
+                                <span class="Bouton_Nouveau"> Nouveau</span>  
+                            <img class=" Banniere_Image" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                        </div> 
+                            <div class="Banniere_description">
+                            
+                                <div class="Identifiant">             <!-- Identification du restaurant 1-->
+                                 <h3>La note enchantée</h3> 
+                                 <p>Charonne</p> 
+                                </div>                                  <!-- Identification du restaurant 1-->    
+                                <div class="Classement">    
+                                    <span><i class="fas fa-heart"></i></span>
+                                    <div class="Icone_Main" >
+                                    <i class="far fa-hand-pointer"></i>
+                                    </div>
+                                </div>  <!--Fin classement premier restaurant--> 
+                            </div>   <!--Fin de bannière description-->   
+                        </a>
+                    </div>                          <!-- fin Restaurant2-->
+
+                    <div class="Restaurant1">      <!--Section restaurant:A la Française-->
+                        <a class="nounderline" href="html/A_la_Française.html"> <!--html/menu_a_la_francaise.html">  -->
+                            <img class=" Banniere_Image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+                            <div class="Banniere_description">  <!--Description restaurant 3-->
+                                <div class="Identifiant">               <!-- Identification du restaurant 3-->
+                                 <h3>A la française</h3> 
+                                 <p>Cité Rouge</p> 
+                                </div>                                 <!-- Fin Identification du restaurant 3-->    
+                                <div class="Classement">            <!--Coup de coeur-->    
+                                    <i class="far fa-heart"></i>
+                                </div>                              <!--Fin Coup de coeur -->
+                            </div>   <!--Fin de bannière description-->   
+                        </a>
+                    </div>                         <!-- fin Section restaurant:A la Française-->
+                    <div class="Restaurant1">      <!--Section restaurant:délice des sens-->
+                        <a class="nounderline" href="html/Le_délice_des_sens.html"> <!--html/menu_a_la_francaise.html">  -->
+                            <img class=" Banniere_Image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                            <div class="Banniere_description">  <!--Description restaurant 4-->
+                                <div class="Identifiant">               <!-- Identification du restaurant 4-->
+                                 <h3>Le délice des sens</h3> 
+                                 <p>Folie Méricourt</p> 
+                                </div>                                  <!-- Fin d'Identification du restaurant 4-->    
+                                    <div class="Classement">        <!--Coup de coeur-->
+                                        <i class="far fa-heart"></i>
+                                    </div>                          <!--Fin Coup de coeur -->
+                            </div>                              <!--Description restaurant 4-->  
+                        </a> 
+                    </div>                          <!-- fin Section restaurant:délice des sens-->
+
+
+                </div>                          <!-- Fin de la bannière des 4 restaurants-->
+                </section>
+            <footer>
+            <nav class="Itemfooter">
+                <h2>ohmyfood</h2>
+                <div class="lien_icone">
+                    <div class="Icone_footer"><i class="fas fa-utensils"></i></div>
+                    <p>Proposez un restaurant</p>
+                </div>
+                <div class="lien_icone">
+                    <div class="Icone_footer"><i class="fas fa-hands-helping"></i></div>
+                   
+                    <p>Devenir partenaire</p>
+                </div>
+                <p>Mention Légales</p>
+                <p>Contact</p>
+            </nav>          
+            </footer >
+         
+    </body> 
+</html>
