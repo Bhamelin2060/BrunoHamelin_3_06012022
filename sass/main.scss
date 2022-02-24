@@ -1,0 +1,51 @@
+@import "./utils/variables";
+ 
+@import "./utils/acceuil/animation_Btn_Choix";
+@import "./utils/acceuil/animation_btn_explore";
+
+ 
+@import "./utils/restaurant/animation_menu";
+@import "./utils/restaurant/animation_validation";
+@import "./utils/restaurant/rotation_logo";
+
+@import "./base/police";
+@import "./components/acceuil/Bouton_Choix";
+@import "./components/acceuil/Bouton_Nouveau";
+@import "./components/acceuil/Bouton1";
+@import "./components/acceuil/Icone_Main";
+ 
+@import "./layout/page-acceuil/Banniere_description";
+@import "./layout/page-acceuil/Banniere_Image";
+@import "./layout/page-acceuil/Bulle";
+@import "./layout/page-acceuil/Choix";
+@import "./layout/page-acceuil/Classement";
+@import "./layout/page-acceuil/container";
+@import "./layout/page-acceuil/Decouverte";
+@import "./layout/page-acceuil/Explore";
+@import "./layout/page-acceuil/Identifiant";
+@import "./layout/page-acceuil/Liste_Restaurant";
+@import "./layout/page-acceuil/Localisation";
+@import "./layout/page-acceuil/Nav_Item";
+@import "./layout/page-acceuil/Restaurants";
+@import "./layout/page-acceuil/Restaurant1";
+@import "./layout/page-acceuil/Titre1";
+@import "./pages/body";
+@import "./pages/page";
+@import "./pages/footer";
+@import "./pages/header";
+@import "./pages/nounderline";
+/* scss relatif aux restaurant */
+@import "./layout/restaurant/image_plat";
+@import "./layout/restaurant/presentation_restaurant";
+@import "./layout/restaurant/presentation";
+@import "./layout/restaurant/choix_menu";
+@import "./layout/restaurant/entree";
+@import "./layout/restaurant/entete";
+@import "./layout/restaurant/enseigne";
+@import "./layout/restaurant/retour_site_principal";
+@import "./layout/restaurant/item_plats";
+@import "./layout/restaurant/commander";
+@import "./layout/restaurant/icone";
+@import "./layout/restaurant/validation";
+@import "./layout/restaurant/prix";
+@import "./layout/restaurant/prix__validation";

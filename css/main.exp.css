@@ -58,7 +58,7 @@
 }
 .Bouton_Choix:active {
   /*transform:scale(0.5);*/
-  transition: transform 2s ease-in_out;
+  transition: transform 2s ease-in;
   transform: scale(0.9);
   box-shadow: 20px 10px 20px #cccccc;
 }
@@ -100,7 +100,7 @@
 }
 .Bouton1:active {
   /*transform:scale(0.5);*/
-  transition: transform 50ms ease-in_out;
+  transition: transform 50ms ease-in-out;
   transform: scale(0.9);
   box-shadow: 20px 10px 20px #bfc0bfe1;
   background: linear-gradient(10deg, #30df79 0%, #30df79 35%, #30df79 100%);
@@ -266,29 +266,49 @@
   padding-bottom: 20px;
 }
 
-#Restaurants {
-  /* ensemble des 6 hotels sélectionnés */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 1px;
+@media screen and (max-width: 376px) {
+  #Restaurants {
+    /* ensemble des 4 restaurants sélectionnés */
+    /* display: flex;*/
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1px;
+  }
 }
-
+@media screen and (min-width: 376px) {
+  #Restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
 .Restaurant1 {
-  /* Premier hotel de marseilles smartphone  */
-  /*    border:1px rgb(206, 137, 35) solid; */
-  flex-direction: column;
-  width: 100%;
-  /* Elargi le container image à 100% du containeur  hotle à marseille*/
-  height: 250px;
   background-color: white;
   border-radius: 20px;
   margin-top: 15px;
   margin-bottom: 10px;
   box-shadow: 3px 3px 10px #cccccc;
+  height: 250px;
 }
 
+@media screen and (max-width: 376px) {
+  .Restaurant1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Elargi le container image à 100% du containeur  hotle à marseille*/
+    height: 250px;
+  }
+}
+@media screen and (min-width: 376px) {
+  .Restaurant1 {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 40%;
+  }
+}
 .Titre1 h2 {
   font-size: 20px;
   font-weight: bold;
@@ -348,7 +368,7 @@ footer h2 {
 }
 footer p {
   color: white;
-  margin: 10px, 0, 10px, 10px;
+  margin: 10px 0px 10px 10px;
 }
 
 .lien_icone {
@@ -457,13 +477,13 @@ header h1 {
 }
 .choix_menu:hover .prix__val {
   margin-right: 1px;
-  transition: transform 0.4s ease-in_out;
+  transition: transform 0.4s ease-in-out;
   transform: translatex(2px);
   /* translation vers la gauche du container validation */
 }
 .choix_menu:hover.icone {
   transform: rotate(0deg);
-  transition: transform 0.5s ease-in_out;
+  transition: transform 0.5s ease-in-out;
   transition-delay: 0s;
 }
 
@@ -495,7 +515,7 @@ header h1 {
 
 .Entete {
   display: flex;
-  justify-content: flex-center;
+  justify-content: center;
 }
 .Entete i {
   padding-left: 10px;

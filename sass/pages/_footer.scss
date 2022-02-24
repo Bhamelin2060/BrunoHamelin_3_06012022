@@ -1,0 +1,31 @@
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  & h2 {
+    font-family: Shrikhand;
+    margin: 2px;
+    color: white;
+    font-size: 20px;
+  }
+  & p {
+    color: white;
+    margin:10px 0px 10px 10px;
+  }
+}
+
+.lien_icone {
+  display: flex;
+  justify-content: flex-start;
+  & i {
+    box-sizing: content-box;
+    font-size: 10px;
+    padding-top: 5px;
+    padding-right: 20px;
+    margin-right: 5px;
+  }
+}
+.Icone_footer {
+  box-sizing: border-box; /* la taille est idépendante dde celle du contenu */
+  width: 30px;
+}

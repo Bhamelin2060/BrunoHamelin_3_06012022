@@ -1,0 +1,25 @@
+.Plats{
+ display:flex;
+ flex-direction: column;
+ padding-left:$marge_interieure_gauche_generale;
+ padding-right:$marge_interieure_droite_generale;
+ background-color: $colour_fond_gris_boutonchoix;
+ &__surligne{
+    position:relative;
+     padding-bottom: 5px;
+     margin-left:$marge_interieure_gauche_generale;
+      
+  
+    &::after{
+      content: '';
+      position:absolute;
+      bottom: 2px;
+      left: 0;
+      width: 38px;
+      height: 4px;
+      background-color: $colour-Validation;
+      
+      
+     }
+  }
+}

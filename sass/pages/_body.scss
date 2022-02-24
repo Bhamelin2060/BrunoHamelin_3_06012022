@@ -1,0 +1,37 @@
+
+
+
+/********************************desktop ****************************************/
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:auto;
+  height:auto;
+  max-width: 768px;
+  margin:0px 20px 0px 20px;
+  position: relative;
+  & h1 {
+    font-family: Shrikhand;
+    font-size: 50px;
+    color:$colour_Titre_site;
+    text-decoration: none;
+    justify-content: center;
+  }
+}
+p {
+  margin: 0px;
+  font-size: 15px;
+  color: rgb(14, 13, 13);
+}
+/********************************smarphone ****************************************/
+@media screen and (max-width: 376px) {
+  /* smarphone */
+  body{
+    width: 375px;
+    margin:0px;
+  } 
+ 
+}
+ 

@@ -1,0 +1,9 @@
+@mixin Animation_Btn_Eplore 
+{
+  transition:transform 50ms ease-in-out;
+  transform:scale(0.9);
+  box-shadow: 20px 10px 20px #bfc0bfe1;
+  background: linear-gradient(10deg, rgb(48, 223, 121) 0%, rgb(48, 223, 121) 35%, rgb(48, 223, 121) 100%);
+  color:black;  
+   
+}

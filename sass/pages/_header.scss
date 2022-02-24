@@ -1,0 +1,17 @@
+/********************************smarphone ****************************************/
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: $colour_fond_gris_header;
+  h1 {
+    font-family: Shrikhand;
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+  }
+}

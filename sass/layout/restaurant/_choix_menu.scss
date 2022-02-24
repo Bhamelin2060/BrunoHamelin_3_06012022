@@ -1,0 +1,31 @@
+.choix_menu{
+    display:flex;
+    flex:1;
+    overflow:hidden;
+    flex-direction:row;
+    justify-content:space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding:0px;
+    margin:10px;
+      
+    animation:animation_menu 500ms;
+    & p{
+        font-size: medium;
+        margin:5px
+    }
+    &:hover{
+
+    & .prix__val{ 
+        margin-right: 1px;
+        @include animation_validation;   /* translation vers la gauche du container validation */
+    }
+    &.icone {
+        @include rotation_logo;
+    }
+}
+}
+ 
+.shadow{
+    box-shadow: 3px 3px 10px rgb(204, 204, 204);
+    }

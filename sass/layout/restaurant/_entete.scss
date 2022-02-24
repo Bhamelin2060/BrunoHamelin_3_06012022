@@ -1,0 +1,15 @@
+.Entete{
+    display: flex;
+    
+     
+    justify-content:center;
+    & i{
+        padding-left:10px;
+        padding-right:10px;
+        font-size:20px;
+    }
+}
+.Site{
+    width:100%;
+    justify-content: center;
+}

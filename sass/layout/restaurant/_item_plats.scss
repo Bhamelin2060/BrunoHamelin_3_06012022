@@ -1,0 +1,11 @@
+.item_plats{
+ flex:1;
+  flex-direction:column;
+  justify-content:flex-start; 
+  white-space: nowrap;
+  overflow:hidden;
+  cursor:pointer; 
+  & p{
+    text-overflow: ellipsis;
+  }
+}

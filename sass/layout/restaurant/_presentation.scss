@@ -1,0 +1,25 @@
+/* Page Restaurant presentation */
+.Presentation{
+    display:flex;
+    flex-direction: row; 
+    height:80px; 
+    text-align: center; 
+    z-index:1;
+    padding-left: $marge_interieure_gauche-generale;
+    padding-right: $marge_interieure_droite-generale;
+    background-color:$colour_fond_Explore;
+    margin-top:10px;
+    border-radius: 20px 20px 0px 0px;
+    justify-content: space-between;
+    & h2{
+    font-family: Shrikhand;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+    }
+    & i{
+        font-size: 20px;
+         
+        margin-top: 20px;
+    }
+}

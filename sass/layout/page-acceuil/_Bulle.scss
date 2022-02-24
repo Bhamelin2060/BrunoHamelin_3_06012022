@@ -1,0 +1,10 @@
+.Bulle {
+  box-sizing: content-box;
+  color: white;
+  background-color: $colour_bulle;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $colour_bulle;
+  border-radius: 15px;
+  margin-left: -15px;
+}

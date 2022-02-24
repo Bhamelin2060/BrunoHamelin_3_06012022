@@ -1,0 +1,8 @@
+@mixin rotation_logo{
+    
+     transform:rotate(0deg); 
+     transition:transform 0.5s ease-in-out;
+     transition-delay: 0s;
+      
+     
+}

@@ -1,0 +1,7 @@
+@mixin Animation_Btn_Choix 
+{
+  
+  transition:transform 2s ease-in;
+  transform:scale(0.9);
+   box-shadow: 20px 10px 20px #cccccc; 
+}
