@@ -1,0 +1,43 @@
+.Plats{
+ display:flex;
+ flex-direction: column;
+ width:100%;
+ /*padding-left:$marge_interieure_gauche_generale;
+ padding-right:$marge_interieure_droite_generale;*/
+ background-color: $colour_fond_gris_boutonchoix;
+ &__surligne{
+    position:relative;
+     padding-bottom: 5px;
+     margin-left:$marge_interieure_gauche_generale;
+      
+  
+    &::after{
+      content: '';
+      position:absolute;
+      bottom: 2px;
+      left: 0;
+      width: 38px;
+      height: 4px;
+      background-color: $colour-Validation;
+      
+      
+     }
+  }
+  
+}
+
+ @media screen and  (min-width:768px) and (max-width: 2024px) {
+   .Plats{
+    width:33%;  
+
+   }
+   #cont{
+     display:flex;
+     flex-direction: row;
+     justify-content:space-around;
+     width:100%;
+     align-items: flex-start;
+     background-color: $colour_fond_gris_boutonchoix
+   }
+  
+}

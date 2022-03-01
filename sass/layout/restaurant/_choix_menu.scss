@@ -1,6 +1,5 @@
 .choix_menu{
     display:flex;
-    flex:1;
     overflow:hidden;
     flex-direction:row;
     justify-content:space-between;
@@ -15,15 +14,14 @@
         margin:5px
     }
     &:hover{
-
-    & .prix__val{ 
+    & .validation { 
         margin-right: 1px;
         @include animation_validation;   /* translation vers la gauche du container validation */
     }
-    &.icone {
+    & .icone{
         @include rotation_logo;
     }
-}
+    }
 }
  
 .shadow{

@@ -4,6 +4,9 @@
   justify-content: center;
   background-color:$colour-Validation;
   border-radius: 0px 10px 10px 0px;
+  /*transition: transform 0.4s ease-in-out;*/
+  transition-duration: 0.5s;
   color: white;
   width: 40px;
+  margin-right:-40px;
 }

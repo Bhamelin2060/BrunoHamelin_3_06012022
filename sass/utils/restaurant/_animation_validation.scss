@@ -1,6 +1,7 @@
 @mixin animation_validation{
        
-     transition:transform 0.4s ease-in-out;
-     transform:translatex(2px); 
-     
+ transition-duration: 0.5s;
+  transform: translatex(2px);
+  margin-right: 0px;
+  /* translation vers la gauche du container validation */
 }
