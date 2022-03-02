@@ -1,1 +1,0 @@
-$ git add A_la_Française/html La_note_enchantee.html La_palette_du_gout.html Le_délice_des_sens.html
