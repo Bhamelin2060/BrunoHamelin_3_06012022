@@ -1,0 +1,19 @@
+.Banniere_Image{        /* ------ Banniere image hotel 1 ---------------*/
+    height:180px; 
+    width:100%;
+    /* border:1px rgb(226, 33, 49) solid;   bour debug*/
+    margin-bottom: 0px;
+    border-radius:10px 10px 1px 1px;
+    object-fit: cover;
+    & h3{
+        font-size: 18px;                /* Changement de la taille des fonte en mode smartphones passe de 8 à 16 */
+        font-weight: bold;
+        margin-top:5px;
+        margin-bottom: 5px;; 
+    }
+    & p{                             /* mise en forme fonte gerale h3 de la description de l'holet */
+        font-size: 15px;            /* Changement de la taille des fonte en mode smartphones passe de 8 à 16 */
+        margin-top:2px;
+        margin-bottom: 2px; 
+       }
+}
