@@ -7,20 +7,31 @@
     border-radius: 10px;
     padding:0px;
     margin:10px;
-      
-    animation:animation_menu 500ms;
+    &.animation_menu__t1{  
+    animation:animation_menu 500ms 0.1s;
+    }  
+    &.animation_menu__t2{  
+        animation:animation_menu 500ms 0.2s;
+    }  
+        
+    &.animation_menu__t3{  
+           animation:animation_menu 500ms 0.3s;
+    }  
+    &.animation_menu__t4{  
+        animation:animation_menu 500ms 0.4s;
+ }
     & p{
         font-size: medium;
         margin:5px
     }
     &:hover{
-    & .validation { 
-        margin-right: 1px;
-        @include animation_validation;   /* translation vers la gauche du container validation */
-    }
-    & .icone{
-        @include rotation_logo;
-    }
+        & .validation { 
+            margin-right: 1px;
+            @include animation_validation;   /* translation vers la gauche du container validation */
+        }
+        & .icone{
+            @include rotation_logo;
+        }
     }
 }
  

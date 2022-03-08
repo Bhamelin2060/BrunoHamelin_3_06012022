@@ -8,3 +8,8 @@
 header h1{
     color:$colour_Titre_site;
 }
+@media screen and (max-width: 376px) {
+    .Image_plat{
+        height:40vh;
+    }
+}

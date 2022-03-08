@@ -4,10 +4,12 @@
 @import "./pages/footer";
 @import "./pages/header";
 @import "./pages/nounderline"; 
+
 @import "./utils/acceuil/animation_btn_choix";
 @import "./utils/acceuil/animation_btn_explore";
+@import "./utils/acceuil/animation_coeur";
+@import "./utils/acceuil/loading_spinner";
 
- 
 @import "./utils/restaurant/animation_menu";
 @import "./utils/restaurant/animation_validation";
 @import "./utils/restaurant/rotation_logo";
@@ -16,7 +18,7 @@
 @import "./components/acceuil/bouton_choix";
 @import "./components/acceuil/bouton_nouveau";
 @import "./components/acceuil/bouton1";
-@import "./components/acceuil/icone_main";
+ 
  
 @import "./layout/page-acceuil/banniere_description";
 @import "./layout/page-acceuil/banniere_Image";
@@ -27,25 +29,27 @@
 @import "./layout/page-acceuil/decouverte";
 @import "./layout/page-acceuil/explore";
 @import "./layout/page-acceuil/identifiant";
-@import "./layout/page-acceuil/liste_Restaurant";
+@import "./layout/page-acceuil/liste_restaurant";
 @import "./layout/page-acceuil/localisation";
 @import "./layout/page-acceuil/nav_Item";
 @import "./layout/page-acceuil/restaurants";
 @import "./layout/page-acceuil/restaurant1";
 @import "./layout/page-acceuil/titre1";
 
+
 /* scss relatif aux restaurant */
+@import "./layout/restaurant/choix_menu";
+@import "./layout/restaurant/commander";
+@import "./layout/restaurant/enseigne";
+@import "./layout/restaurant/entete";
+@import "./layout/restaurant/icone";
 @import "./layout/restaurant/image_plat";
+@import "./layout/restaurant/item_plats";
+@import "./layout/restaurant/plats";
 @import "./layout/restaurant/presentation_restaurant";
 @import "./layout/restaurant/presentation";
-@import "./layout/restaurant/choix_menu";
-@import "./layout/restaurant/plats";
-@import "./layout/restaurant/entete";
-@import "./layout/restaurant/enseigne";
-@import "./layout/restaurant/retour_site_principal";
-@import "./layout/restaurant/item_plats";
-@import "./layout/restaurant/commander";
-@import "./layout/restaurant/icone";
-@import "./layout/restaurant/validation";
 @import "./layout/restaurant/prix";
+@import "./layout/restaurant/retour_site_principal";
+@import "./layout/restaurant/validation";
+
  

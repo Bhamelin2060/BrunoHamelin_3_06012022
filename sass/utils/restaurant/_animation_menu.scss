@@ -1,11 +1,15 @@
-@keyframes animation_menu {
-   
+.animation_menu{
+    @keyframes animation_menu {
     0%{
      transform: translatey(50%);
       opacity:0;
     } 
+     
      100%{ 
      transform:translatey(0);
      opacity:1;
     }
+  
+
+}
 }
