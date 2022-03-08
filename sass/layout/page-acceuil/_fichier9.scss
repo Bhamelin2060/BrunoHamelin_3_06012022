@@ -1,0 +1,16 @@
+.Explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: $colour_fond_gris_boutonchoix;
+  text-align: center;
+  padding-bottom: 40px;
+  & h3 {
+    font-size: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5px;
+  }
+}
