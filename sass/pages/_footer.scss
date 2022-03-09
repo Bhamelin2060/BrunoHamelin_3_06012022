@@ -1,31 +1,51 @@
 footer {
+   
   background-color: black;
   color: white;
   padding: 20px;
+   
   & h2 {
     font-family: Shrikhand;
     margin: 2px;
-    color: white;
-    font-size: 20px;
+    color: white; 
+     font-size: 20px;  
   }
   & p {
     color: white;
     margin:10px 0px 10px 10px;
+    font-size: 20px;
   }
 }
 
 .lien_icone {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+}
+ 
+.Icone_footer {
+  display:flex;
+  box-sizing: border-box; /* la taille est idépendante dde celle du contenu */
+  padding-left:15px;
+  width: 30px;
+  & p {
+         
+    margin:15px 0px 10px 10px;
+  }
   & i {
     box-sizing: content-box;
-    font-size: 10px;
     padding-top: 5px;
-    padding-right: 20px;
-    margin-right: 5px;
-  }
+     
 }
-.Icone_footer {
-  box-sizing: border-box; /* la taille est idépendante dde celle du contenu */
-  width: 30px;
 }
+
+.contacter{
+  &:active + .formulaire{
+    transition:transform 50ms ease-in-out;
+    transform:scale(1);
+    z-index: 40;
+}
+cursor: pointer; 
+}
+
+
+ 

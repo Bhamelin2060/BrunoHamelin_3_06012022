@@ -9,17 +9,19 @@
 @import "./utils/acceuil/animation_btn_explore";
 @import "./utils/acceuil/animation_coeur";
 @import "./utils/acceuil/loading_spinner";
+@import "./utils/acceuil/animation_formulaire";
 
 @import "./utils/restaurant/animation_menu";
 @import "./utils/restaurant/animation_validation";
 @import "./utils/restaurant/rotation_logo";
 
+
 @import "./base/police";
 @import "./components/acceuil/bouton_choix";
 @import "./components/acceuil/bouton_nouveau";
 @import "./components/acceuil/bouton1";
- 
- 
+
+@import "./layout/formulaire/contact"; 
 @import "./layout/page-acceuil/banniere_description";
 @import "./layout/page-acceuil/banniere_Image";
 @import "./layout/page-acceuil/bulle";
@@ -35,6 +37,7 @@
 @import "./layout/page-acceuil/restaurants";
 @import "./layout/page-acceuil/restaurant1";
 @import "./layout/page-acceuil/titre1";
+
 
 
 /* scss relatif aux restaurant */

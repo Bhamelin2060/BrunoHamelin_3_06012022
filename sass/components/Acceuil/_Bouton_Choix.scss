@@ -1,13 +1,11 @@
 .Bouton_Choix{
     display: flex; 
-    height:70px;
-    width:80%;
-    justify-content:left; 
+    height:80px;
     border-radius:20px;
-    text-align: center;
-    margin:20px;
+    width:50%;
+    margin:30px;
     border:none;
-    padding :25px 10px 20px 10px;
+    padding-top:30px;  
     box-shadow: 3px 3px 10px rgb(204, 204, 204); 
     background-color:$colour_fond_gris_boutonchoix;
     transform:scale(1);
@@ -18,7 +16,7 @@
             color:$colour_bulle;
         }
     }
-    & span{
+    & span strong{
         font-size:14px;
         margin-left: 15px;
     }  
@@ -33,4 +31,9 @@
           @include Animation_Btn_Choix; 
     }
     
+}
+@media screen and (max-width: 376px){
+    .Bouton_Choix{
+width:80%;
+    }
 }

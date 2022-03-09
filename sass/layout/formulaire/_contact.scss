@@ -1,0 +1,31 @@
+.formulaire{
+    display: flex;
+    position:absolute;  
+    flex-direction: column;
+    justify-content: space-around;
+    left:35%;
+    top: 35%;
+    z-index: -20; 
+
+    flex-direction: column;
+    width:300px;
+    height:auto;
+    border:1px red solid;
+    background-color: aliceblue;
+    transition:transform 50ms ease-in-out;
+    transform:scale( 0.1);
+    &.envoi:active{
+        transition:transform 50ms ease-in-out;
+        transform:scale( 0.1);
+        z-index: -20;
+    }
+}
+.paragraphe{
+    margin:5%
+}
+.message{
+    margin:5%
+}
+.envoi{
+    align-items: center;
+}

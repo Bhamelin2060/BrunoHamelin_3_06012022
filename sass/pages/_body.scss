@@ -6,13 +6,15 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
+  align-items: center; 
+  font-family: Roboto, Arial, Helvetica, sans-serif; 
   margin:auto;
   height:auto;
-  max-width: 768px;
-  margin:0px 20px 0px 20px;
+   
+  max-width: 996px;
+  margin:auto;
   position: relative;
-  & h1 {
+  h1 {
     font-family: Shrikhand;
     font-size: 50px;
     color:$colour_Titre_site;
@@ -25,13 +27,18 @@ p {
   font-size: 15px;
   color: rgb(14, 13, 13);
 }
-/********************************smarphone ****************************************/
-@media screen and (max-width: 376px) {
-  /* smarphone */
-  body{
-    width: 375px;
-    margin:0px;
-  } 
- 
+main{
+  display:flex;
+  position:relative;
+  border: white;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
 }
+#cont{
+  width: 100%;
+}
+
  

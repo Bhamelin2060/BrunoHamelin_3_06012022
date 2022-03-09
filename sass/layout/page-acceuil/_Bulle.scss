@@ -2,12 +2,13 @@
  
   box-sizing: border-box;
   color:white;
-  background-color:#9356dc ;
+  background-color:$colour_fond_boutton_prim ;
   width: 25px;
   height:25px;
-  border :1px solid #9356dc;
+  border :1px solid $colour_fond_boutton_prim;
   padding-top:3px;
   border-radius:15px;
   
   margin-left:-15px;
 }
+ 

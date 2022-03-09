@@ -15,8 +15,8 @@
       rel="stylesheet"
       href="https://fontawesome.com/v5.15/icons/utensils?style=solid"
     />
-    <!-- <link rel="stylesheet" href="css/main.min.css"/>-->
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/main.exp.css"/>
+    <!-- <link rel="stylesheet" href="css/main.min.css" />-->
     <title>menu_debug</title>
   </head>
   <body>
@@ -39,7 +39,14 @@
         <div class="Presentation">
           <!-- Presentation du titre du restaurant-->
           <h2>A la française</h2>
-          <i class="far fa-heart"></i>
+          <div class="Classement">    
+            <div class="dessus">
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="dessous">
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>  <!--Fin classement premier restaurant--> 
         </div>
       </div>
 
@@ -48,7 +55,7 @@
         <div class="Plats">                                   <!--sectssssion ENTREE-->
           <h3 class="Plats__surligne">ENTREES</h3>
 
-          <div class="choix_menu animation_menu shadow">        <!--Entree 1-->
+          <div class="choix_menu animation_menu__t1 shadow">        <!--Entree 1-->
             <div class="item_plats">
               <p><strong>Tartare de poulpe acidulé</strong></p>
               <p>Aux zests d'orange</p>
@@ -63,22 +70,20 @@
             
           </div>                                                <!--fin entree 1-->
 
-          <div class="choix_menu animation_menu shadow">        <!--Entree 2-->
+          <div class="choix_menu animation_menu__t2 shadow">        <!--Entree 2-->
             <div class="item_plats">
               <p><strong>Velouté de légumes d'antan</strong></p>
               <p>Carotte, panais, topinambour</p>
             </div>                                              <!--fin class; items plats-->
-           
               <div class="prix">
                 <p><strong>35€</strong></p>
               </div>                                          <!--fin class:prix-->
               <div class="validation">
                 <div class="icone"><i class="fa fa-check-circle"></i></div>
               </div>                                          <!--fin class: validation-->
-             
           </div>                                              <!--fin entree 2-->
 
-          <div class="choix_menu animation_menu shadow">      <!--Entree 3-->
+          <div class="choix_menu animation_menu__t3 shadow">      <!--Entree 3-->
             <div class="item_plats">
               <p><strong>Soupe à l'oignon</strong></p>
               <p>Revisité</p>
@@ -96,7 +101,7 @@
      
         <div class="Plats">                                   <!--section plats-->
           <h3 class="Plats__surligne">PLATS</h3>
-          <div class="choix_menu animation_menu shadow">      <!--Plat1-->
+          <div class="choix_menu animation_menu__t1 shadow">      <!--Plat1-->
             <div class="item_plats">
               <p><strong>Coquille Saint-Jacques</strong></p>
               <p>Accompagné d'une purée de panais</p>
@@ -111,7 +116,7 @@
            
           </div>                                              <!--fin plat 1-->
 
-          <div class="choix_menu animation_menu shadow">      <!--Plat 2-->
+          <div class="choix_menu animation_menu__t2 shadow">      <!--Plat 2-->
             <div class="item_plats">
               <p><strong>Magret de Canard</strong></p>
               <p>Et parmentier de pommes de terres</p>
@@ -126,7 +131,7 @@
              
           </div>                                              <!--fin plat 2-->
 
-          <div class="choix_menu animation_menu shadow">      <!--Plat 3-->
+          <div class="choix_menu animation_menu__t3 shadow">      <!--Plat 3-->
             <div class="item_plats">
               <p><strong>Pigeonneau d'Ile et Vilaine</strong></p>
               <p>Sur Lit de gnocchis aus légumes</p>
@@ -146,7 +151,7 @@
         <div class="Plats">                                   <!--section Desserts-->
           <h3 class="Plats__surligne">DESSERTS</h3>
 
-          <div class="choix_menu animation_menu shadow"> <!--Dessert 1-->
+          <div class="choix_menu animation_menu__t1 shadow"> <!--Dessert 1-->
             <div class="item_plats">
               <p><strong>Pétales de violettes glacés</strong></p>
               <p>Et purée de noisttes</p>
@@ -161,7 +166,7 @@
              
           </div>                                              <!--fin dessert 1-->
 
-          <div class="choix_menu animation_menu shadow">   <!--Dessert 2-->
+          <div class="choix_menu animation_menu__t2 shadow">   <!--Dessert 2-->
             <div class="item_plats">
               <p><strong>Fondant au chocolat</strong></p>
               <p>revisité</p>
@@ -176,7 +181,7 @@
              
           </div>                                              <!--fin dessert 2-->
 
-          <div class="choix_menu animation_menu shadow"> <!--Dessert 3-->
+          <div class="choix_menu animation_menu__t3 shadow"> <!--Dessert 3-->
           
             <div class="item_plats">
               <p><strong>Mille feuilles croustillant</strong></p>
@@ -209,7 +214,7 @@
           <p>Devenir partenaire</p>
         </div>
         <p>Mention Légales</p>
-        <p>Contact</p>
+        <a  class="nounderline "href="formulaire-de-contact.html"><p> Contact</p> </a>
       </nav>
     </footer>
   </main>

@@ -1,13 +1,37 @@
 .Classement {
   /* ------------------- Container coup de coeur ----------------------*/
+  display:flex;
   position: relative;
   padding-top: 5px;
   font-size: 25px;
   padding-right: 10px;
-  & span {
-    color: #9356dc;
+  width:24px;
+  
+  background: none;
+  cursor: pointer; 
+  &:hover .dessus{
+    @include Animation_Coeur1 ;
   }
-  &:active{
-    background-color:#9356dc ;
+  &:hover .dessous{
+    @include Animation_Coeur2 ;
   }
+   
+}
+.dessus{
+  position:absolute;
+  top:0;
+  transition:opacity $Temps_transition_opacité_coeur;
+  opacity:1;
+  color:blueviolet;
+  
+  /*opacity:$opacité_coeur;*/
+  /*z-index:   $Z_index_coeur; */
+}
+.dessous{
+  position:absolute;
+  transition:opacity $Temps_transition_opacité_coeur;
+  top:0;
+  color:blueviolet;
+  
+  opacity:0;
 }
