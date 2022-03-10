@@ -7,14 +7,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  font-family: Roboto, Arial, Helvetica, sans-serif; 
+  font-family: "Roboto","Arial","sans-serif"; 
   margin:auto;
   height:auto;
    
   max-width: 996px;
   margin:auto;
   position: relative;
-  h1 {
+  h1 + h3 {
     font-family: Shrikhand;
     font-size: 50px;
     color:$colour_Titre_site;

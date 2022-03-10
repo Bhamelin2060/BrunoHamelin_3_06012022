@@ -12,7 +12,8 @@ $colour-Validation:#99E2D0;
 $marge_interieure_gauche_generale:10px;
 $marge_interieure_droite_generale:10px;
 $Temps_transition_opacité_coeur:0.5s;
-$Temps_animation_acceuil:2s;  /*durée de l'animation spinner ouverture page acceuil */
+$Temps_animation_acceuil:3s;  /*durée de l'animation spinner ouverture page acceuil */
 $Tempsretard_spinner:1s;       /* Délai du retart de l'animation spinner */
 $Temps_spinner:($Temps_animation_acceuil)-($Tempsretard_spinner) ;  /* durée du spinner */           
-                            
+$Resolution_basse:768px;
+$Resolution_haute:1024px                       

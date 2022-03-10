@@ -22,8 +22,8 @@
   top:0;
   transition:opacity $Temps_transition_opacité_coeur;
   opacity:1;
-  color:blueviolet;
-  
+  color:$colour_Titre_site;
+  font-style:normal;
   /*opacity:$opacité_coeur;*/
   /*z-index:   $Z_index_coeur; */
 }

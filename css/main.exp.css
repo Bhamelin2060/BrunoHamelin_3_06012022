@@ -7,14 +7,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   margin: auto;
   height: auto;
   max-width: 996px;
   margin: auto;
   position: relative;
 }
-body h1 {
+body h1 + h3 {
   font-family: Shrikhand;
   font-size: 50px;
   color: black;
@@ -121,8 +121,8 @@ header h1 {
   /* 1.0 - opaque */
   opacity: 1;
   z-index: 100;
-  -webkit-animation: apparence 2s;
-          animation: apparence 2s;
+  -webkit-animation: apparence 3s;
+          animation: apparence 3s;
   opacity: 0;
   z-index: -1;
 }
@@ -155,11 +155,11 @@ header h1 {
   }
 }
 .cube {
-  -webkit-animation: Rotation 1s 1s;
-          animation: Rotation 1s 1s;
+  -webkit-animation: Rotation 2s 1s;
+          animation: Rotation 2s 1s;
   /* durée de l'animation 8 secondes  retard 100mx  */
-  -webkit-animation-timing-function: 2s;
-          animation-timing-function: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   position: absolute;
   /*display:flex;*/
   justify-content: center;
@@ -182,13 +182,13 @@ header h1 {
 @-webkit-keyframes Rotation {
   0% {
     /*transform: translate3d(-40%, -50%, 0) rotate(0deg);*/
-    transform: scale(10%) rotate(0deg);
+    transform: scale(0.1) rotate(0deg);
     opacity: 1;
     z-index: 100;
   }
   50% {
     /* transform: translate3d(-40%, -50%, 0) rotate(360deg);*/
-    transform: scale(90%) rotate(1800deg);
+    transform: scale(0.9) rotate(1800deg);
     opacity: 1;
   }
   99% {
@@ -196,7 +196,7 @@ header h1 {
   }
   100% {
     /* transform: translate3d(-40%, -50%, 0) rotate(360deg);*/
-    transform: scale(10%) rotate(0deg);
+    transform: scale(0.1) rotate(0deg);
     opacity: 0;
     z-index: 100;
   }
@@ -205,13 +205,13 @@ header h1 {
 @keyframes Rotation {
   0% {
     /*transform: translate3d(-40%, -50%, 0) rotate(0deg);*/
-    transform: scale(10%) rotate(0deg);
+    transform: scale(0.1) rotate(0deg);
     opacity: 1;
     z-index: 100;
   }
   50% {
     /* transform: translate3d(-40%, -50%, 0) rotate(360deg);*/
-    transform: scale(90%) rotate(1800deg);
+    transform: scale(0.9) rotate(1800deg);
     opacity: 1;
   }
   99% {
@@ -219,7 +219,7 @@ header h1 {
   }
   100% {
     /* transform: translate3d(-40%, -50%, 0) rotate(360deg);*/
-    transform: scale(10%) rotate(0deg);
+    transform: scale(0.1) rotate(0deg);
     opacity: 0;
     z-index: 100;
   }
@@ -275,12 +275,13 @@ header h1 {
   display: flex;
   height: 80px;
   border-radius: 20px;
-  width: 50%;
-  margin: 30px;
+  width: 75%;
+  margin: 20px;
   border: none;
-  padding-top: 30px;
+  padding-top: 0px;
   box-shadow: 3px 3px 10px #cccccc;
   background-color: #f1eeee;
+  align-items: center;
   transform: scale(1);
   transition: transform 500ms;
 }
@@ -293,6 +294,7 @@ header h1 {
 .Bouton_Choix span strong {
   font-size: 14px;
   margin-left: 15px;
+  font-family: "Roboto", "Arial", "sans-serif";
 }
 .Bouton_Choix i {
   font-size: 15px;
@@ -307,9 +309,15 @@ header h1 {
   box-shadow: 20px 10px 20px #cccccc;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (min-width: 768px) {
   .Bouton_Choix {
-    width: 80%;
+    width: 50%;
+  }
+  .Bouton_Choix i {
+    font-size: 20px;
+  }
+  .Bouton_Choix span {
+    font-size: 20px;
   }
 }
 .Bouton_Nouveau {
@@ -320,7 +328,7 @@ header h1 {
   color: rgba(31, 150, 104, 0.822);
   font-weight: bold;
   position: absolute;
-  left: 75%;
+  left: 70%;
   bottom: 80%;
   border-radius: 5px;
 }
@@ -336,6 +344,7 @@ header h1 {
   border-radius: 25px;
   /* border-color: fuchsia ;*/
   color: white;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: bold;
   font-size: 13px;
   box-shadow: 5px 5px 10px #cccccc;
@@ -352,7 +361,7 @@ header h1 {
   transform: scale(0.9);
   box-shadow: 20px 10px 20px #bfc0bfe1;
   background: linear-gradient(10deg, #30df79 0%, #30df79 35%, #30df79 100%);
-  color: black;
+  background: linear-gradient(0deg, #9356DC, #FF79DA 905%, #8f2e8f 100%);
 }
 
 .formulaire {
@@ -401,6 +410,7 @@ header h1 {
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 5px;
+  color: black;
 }
 .Banniere_description p {
   font-size: 15px;
@@ -440,12 +450,20 @@ header h1 {
   background-color: #9356DC;
   width: 25px;
   height: 25px;
-  border: 1px solid #9356DC;
-  padding-top: 3px;
+  border: 3px solid #9356DC;
+  padding-top: 0px;
   border-radius: 15px;
+  text-align: center;
   margin-left: -15px;
 }
 
+@media screen and (min-width: 768px) {
+  .Bulle {
+    padding-bottom: 2px;
+    width: 30px;
+    height: 30px;
+  }
+}
 .Choix {
   display: flex;
   flex-direction: column;
@@ -482,7 +500,8 @@ header h1 {
   top: 0;
   transition: opacity 0.5s;
   opacity: 1;
-  color: blueviolet;
+  color: black;
+  font-style: normal;
   /*opacity:$opacité_coeur;*/
   /*z-index:   $Z_index_coeur; */
 }
@@ -567,7 +586,7 @@ header h1 {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 768px) {
   #Restaurants {
     /* ensemble des 4 restaurants sélectionnés */
     /* display: flex;*/
@@ -577,7 +596,7 @@ header h1 {
     padding: 1px;
   }
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
   #Restaurants {
     display: flex;
     flex-wrap: wrap;
@@ -599,7 +618,7 @@ header h1 {
   box-shadow: 20px 10px 20px #cccccc;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 768px) {
   .Restaurant1 {
     display: flex;
     flex-direction: column;
@@ -608,7 +627,7 @@ header h1 {
     height: 250px;
   }
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
   .Restaurant1 {
     margin-left: 5px;
     margin-right: 5px;
@@ -688,6 +707,7 @@ header h1 {
 }
 .Enseigne i {
   font-size: 30px;
+  color: black;
 }
 
 .Entete {
@@ -725,7 +745,7 @@ header h1 {
   color: black;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 768px) {
   .Image_plat {
     height: 40vh;
   }
@@ -768,7 +788,7 @@ header h1 {
   background-color: #99E2D0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 2024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .Plats {
     width: 33%;
   }

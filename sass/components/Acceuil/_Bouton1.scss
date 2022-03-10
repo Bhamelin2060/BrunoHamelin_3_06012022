@@ -9,12 +9,13 @@
     border-radius:25px;
    /* border-color: fuchsia ;*/
     color:white;
+    font-family: "Roboto","Arial","sans-serif"; 
     font-weight:bold;
     font-size: 13px;
     box-shadow: 5px 5px 10px rgb(204, 204, 204);
     margin-top: 10px;
     margin-bottom: 10px;
-    cursor: pointer;
+    cursor:pointer;
      
     &:hover{
     background: linear-gradient(0deg, $colour_fond_boutton_prim  ,$colour_fond_boutton_second 35%, rgb(143, 46, 143) 100%);

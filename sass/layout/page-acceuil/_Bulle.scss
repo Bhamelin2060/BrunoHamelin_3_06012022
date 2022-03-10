@@ -5,10 +5,16 @@
   background-color:$colour_fond_boutton_prim ;
   width: 25px;
   height:25px;
-  border :1px solid $colour_fond_boutton_prim;
-  padding-top:3px;
+  border :3px solid $colour_fond_boutton_prim;
+  padding-top:0px;
   border-radius:15px;
-  
+  text-align: center;
   margin-left:-15px;
 }
- 
+@media screen and (min-width: $Resolution_basse){
+  .Bulle{
+    padding-bottom:2px;
+    width: 30px;
+   height:30px;
+  }
+}

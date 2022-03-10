@@ -1,4 +1,4 @@
-@media screen and (max-width: 376px) {
+@media screen and (max-width: $Resolution_basse) {
 #Restaurants {
   /* ensemble des 4 restaurants sélectionnés */
  /* display: flex;*/
@@ -10,7 +10,7 @@
 
  
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: $Resolution_basse) {
 #Restaurants{
   display:flex;
   flex-wrap:wrap;
