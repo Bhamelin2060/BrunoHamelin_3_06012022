@@ -2,8 +2,8 @@
 /*durée de l'animation spinner ouverture page acceuil */
 /* Délai du retart de l'animation spinner */
 /* durée du spinner */
-/********************************desktop ****************************************/
 body {
+  /*desktop*/
   display: flex;
   flex-direction: column;
   align-items: center;

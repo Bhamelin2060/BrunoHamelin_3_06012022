@@ -1,16 +1,10 @@
-
-
-
-/********************************desktop ****************************************/
-
-body {
+body{                                               /*desktop*/
   display: flex;
   flex-direction: column;
   align-items: center; 
   font-family: "Roboto","Arial","sans-serif"; 
   margin:auto;
   height:auto;
-   
   max-width: 996px;
   margin:auto;
   position: relative;
