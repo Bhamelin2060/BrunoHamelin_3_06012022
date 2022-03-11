@@ -2,7 +2,7 @@ $colour_fond_boutton: fuchsia;
 $colour_fond_boutton_prim: #9356DC;
 $colour_fond_boutton_second: #FF79DA ;
 $colour_bulle: #9356dc;
-$colour_fond_gris_header: white;
+$colour_fond_header: white;
 $colour_fond_localisation: gainsboro;
 $colour_fond_Explore: #f1eeee;
 $colour_fond_gris_boutonchoix: $colour_fond_Explore;
@@ -13,7 +13,7 @@ $marge_interieure_gauche_generale:10px;
 $marge_interieure_droite_generale:10px;
 $Temps_transition_opacité_coeur:0.5s;
 $Temps_animation_acceuil:3s;  /*durée de l'animation spinner ouverture page acceuil */
-$Tempsretard_spinner:1s;       /* Délai du retart de l'animation spinner */
+$Tempsretard_spinner:1s;      /* Délai du retart de l'animation spinner */
 $Temps_spinner:($Temps_animation_acceuil)-($Tempsretard_spinner) ;  /* durée du spinner */           
 $Resolution_basse:768px;
 $Resolution_haute:1024px                       

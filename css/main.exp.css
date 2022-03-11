@@ -322,18 +322,17 @@ header h1 {
 }
 .Bouton_Nouveau {
   display: flex;
-  position: relative;
+  position: absolute;
   /* classe du bouton nouveau */
   background-color: #60e2d1;
   color: rgba(31, 150, 104, 0.822);
   font-weight: bold;
   position: absolute;
-  left: 70%;
-  bottom: 80%;
-  border-radius: 5px;
-}
-.Bouton_Nouveau p {
-  font-size: 11px;
+  right: 10%;
+  top: 10%;
+  padding: 3px;
+  border-radius: 1px;
+  font-size: 9px;
   padding: 1px 5px 1px 5px;
 }
 
@@ -342,7 +341,7 @@ header h1 {
   height: 50px;
   width: 200px;
   border-radius: 25px;
-  /* border-color: fuchsia ;*/
+  border: none;
   color: white;
   font-family: "Roboto", "Arial", "sans-serif";
   font-weight: bold;
@@ -693,6 +692,7 @@ header h1 {
 .commander {
   display: flex;
   justify-content: center;
+  background-color: #f1eeee;
 }
 .commander .Bouton1 {
   margin-top: 10%;
