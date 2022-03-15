@@ -49,6 +49,7 @@ footer h2 {
   margin: 2px;
   color: white;
   font-size: 20px;
+  padding-left: 10px;
 }
 footer p {
   color: white;
@@ -117,24 +118,9 @@ header h1 {
   /* 1.0 - opaque */
   opacity: 1;
   z-index: 100;
-  -webkit-animation: apparence 3s;
-          animation: apparence 3s;
+  animation: apparence 3s;
   opacity: 0;
   z-index: -1;
-}
-
-@-webkit-keyframes apparence {
-  0% {
-    z-index: 100;
-    opacity: 0.9;
-  }
-  90% {
-    opacity: 0.8;
-  }
-  100% {
-    z-index: 100;
-    opacity: 0;
-  }
 }
 
 @keyframes apparence {
@@ -151,17 +137,14 @@ header h1 {
   }
 }
 .cube {
-  -webkit-animation: Rotation 2s 1s;
-          animation: Rotation 2s 1s;
+  animation: Rotation 2s 1s;
   /* durée de l'animation 8 secondes  retard 100mx  */
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
   position: absolute;
   /*display:flex;*/
   justify-content: center;
   text-align: center;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-iteration-count: 1;
   left: 40%;
   top: 100px;
   height: 70px;
@@ -173,29 +156,6 @@ header h1 {
   border-radius: 150px;
   opacity: 0;
   z-index: -1;
-}
-
-@-webkit-keyframes Rotation {
-  0% {
-    /*transform: translate3d(-40%, -50%, 0) rotate(0deg);*/
-    transform: scale(0.1) rotate(0deg);
-    opacity: 1;
-    z-index: 100;
-  }
-  50% {
-    /* transform: translate3d(-40%, -50%, 0) rotate(360deg);*/
-    transform: scale(0.9) rotate(1800deg);
-    opacity: 1;
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    /* transform: translate3d(-40%, -50%, 0) rotate(360deg);*/
-    transform: scale(0.1) rotate(0deg);
-    opacity: 0;
-    z-index: 100;
-  }
 }
 
 @keyframes Rotation {
@@ -226,16 +186,6 @@ header h1 {
     top: 500px;
     height: 140px;
     width: 140px;
-  }
-}
-@-webkit-keyframes animation_menu {
-  0% {
-    transform: translatey(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translatey(0);
-    opacity: 1;
   }
 }
 @keyframes animation_menu {
@@ -421,8 +371,7 @@ header h1 {
   /* border:1px rgb(226, 33, 49) solid;   bour debug*/
   margin-bottom: 0px;
   border-radius: 10px 10px 1px 1px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .Banniere_Image h3 {
   font-size: 18px;
@@ -542,8 +491,7 @@ header h1 {
   color: black;
   flex-direction: column;
   justify-content: space-between;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
   /* interdit le soulignement d'un texte dans une structure de lien */
   padding: 20px;
   background-color: #f2f2f2;
@@ -648,20 +596,16 @@ header h1 {
   margin: 10px;
 }
 .choix_menu.animation_menu__t1 {
-  -webkit-animation: animation_menu 500ms 0.1s;
-          animation: animation_menu 500ms 0.1s;
+  animation: animation_menu 500ms 0.1s;
 }
 .choix_menu.animation_menu__t2 {
-  -webkit-animation: animation_menu 500ms 0.2s;
-          animation: animation_menu 500ms 0.2s;
+  animation: animation_menu 500ms 0.2s;
 }
 .choix_menu.animation_menu__t3 {
-  -webkit-animation: animation_menu 500ms 0.3s;
-          animation: animation_menu 500ms 0.3s;
+  animation: animation_menu 500ms 0.3s;
 }
 .choix_menu.animation_menu__t4 {
-  -webkit-animation: animation_menu 500ms 0.4s;
-          animation: animation_menu 500ms 0.4s;
+  animation: animation_menu 500ms 0.4s;
 }
 .choix_menu p {
   font-size: medium;
@@ -731,8 +675,7 @@ header h1 {
 .Image_plat {
   /* ------ Banniere image hotel 1 ---------------*/
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
   height: 40vh;
 }
