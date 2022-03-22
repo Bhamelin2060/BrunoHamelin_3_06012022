@@ -7,19 +7,51 @@
     border-radius: 10px;
     padding:0px;
     margin:10px;
+    opacity:0;
     &.animation_menu__t1{  
         animation:animation_menu 500ms 0.1s;
+        animation-fill-mode: forwards;             /* permet de maintenir l'animation dans son etat final suit au keyframe*/
     }  
     &.animation_menu__t2{  
         animation:animation_menu 500ms 0.2s;
+        animation-fill-mode: forwards;
     }  
         
     &.animation_menu__t3{  
         animation:animation_menu 500ms 0.3s;
+        animation-fill-mode: forwards;
     }  
     &.animation_menu__t4{  
         animation:animation_menu 500ms 0.4s;
- }
+        animation-fill-mode: forwards;
+    }
+    &.animation_menu__t5{  
+        animation:animation_menu 500ms 0.5s;
+        animation-fill-mode: forwards;
+    }
+    &.animation_menu__t6{  
+        animation:animation_menu 500ms 0.6s;
+        animation-fill-mode: forwards;
+    }
+    &.animation_menu__t7{  
+        animation:animation_menu 500ms 0.7s;
+        animation-fill-mode: forwards;
+    }
+    &.animation_menu__t8{  
+        animation:animation_menu 500ms 0.8s;
+        animation-fill-mode: forwards;
+    }
+    &.animation_menu__t9{  
+        animation:animation_menu 500ms 0.9s;
+        animation-fill-mode: forwards;
+    }
+    &.animation_menu__t10{  
+        animation:animation_menu 500ms 1s;
+        animation-fill-mode: forwards;
+    }
+
+
+  
     & p{
         font-size: medium;
         margin:5px

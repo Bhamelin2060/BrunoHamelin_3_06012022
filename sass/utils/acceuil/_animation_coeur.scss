@@ -1,15 +1,13 @@
 @mixin Animation_Coeur1 
 {
     
-    transition:opacity $Temps_transition_opacité_coeur;
-    opacity:0;
+    transition: color 0.5s ease;
+    color: transparent;
     
 }
 @mixin Animation_Coeur2 
 {
-   
-    transition:opacity $Temps_transition_opacité_coeur;
-    opacity:1;
-    
+     transition:opacity $Temps_transition_opacité_coeur; 
+     z-index:1 ;
+     opacity:1;
 }
-

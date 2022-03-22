@@ -1,9 +1,12 @@
 .loading_spinner{
-  position:absolute;
+   position:fixed;
   left:0;
   top:0; 
   height:100%;
-  width:100%;
+  width:100%; 
+  display:flex; 
+  justify-content: center;
+  align-items:center;
   background-color: rgba(255, 255, 255, 1.0); /* 1.0 - opaque */
   opacity: 1;
   z-index: 100; 
@@ -33,14 +36,10 @@
 .cube{
     animation:Rotation $Temps_spinner $Tempsretard_spinner;           /* durée de l'animation 8 secondes  retard 100mx  */
     animation-timing-function:linear;  
-    position: absolute;
-    /*display:flex;*/
-    justify-content: center;
-    text-align:center ;
     
     animation-iteration-count: 1;
-    left:40%;
-    top:100px; 
+    /*left:40%;
+    top:100px; */
     height:70px;
     width:70px;
     border-bottom:10px   rgb(79, 233, 79) solid;
@@ -80,7 +79,7 @@
          z-index:100;
         }
       } 
-@media screen and (min-width: 376px) {
+@media screen and (min-width:$Resolution_basse) {
   .cube{
     left:40%;
     top:500px; 

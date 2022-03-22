@@ -6,7 +6,7 @@
   font-size: 25px;
   padding-right: 10px;
   width:24px;
-  
+  margin-bottom:25px;
   background: none;
   cursor: pointer; 
   &:hover .dessus{
@@ -22,16 +22,24 @@
   top:0;
   transition:opacity $Temps_transition_opacité_coeur;
   opacity:1;
-  color:$colour_Titre_site;
-  font-style:normal;
-  /*opacity:$opacité_coeur;*/
-  /*z-index:   $Z_index_coeur; */
+   color:$colour_fond_boutton_prim; 
 }
 .dessous{
   position:absolute;
   transition:opacity $Temps_transition_opacité_coeur;
   top:0;
-  color:blueviolet;
+   
+  
+  background: linear-gradient(217deg, $colour_fond_boutton_prim,  $colour_fond_boutton_second 70.71%),
+  linear-gradient(127deg,$colour_fond_boutton_prim, $colour_fond_boutton_second 70.71%),
+  linear-gradient(336deg, $colour_fond_boutton_second,$colour-Validation 80.71%);
+
+
+ /* Background-clip: text;*/
+ 
+ -webkit-background-clip: text;
+ 
+ color: transparent;
   
   opacity:0;
 }

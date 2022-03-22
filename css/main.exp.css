@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/*durée de l'animation spinner ouverture page acceuil */
+/* Délai du retart de l'animation spinner */
+/* durée du spinner */
 body {
   /*desktop*/
   display: flex;
@@ -109,11 +113,14 @@ header h1 {
 }
 
 .loading_spinner {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   /* 1.0 - opaque */
   opacity: 1;
@@ -140,13 +147,9 @@ header h1 {
   animation: Rotation 2s 1s;
   /* durée de l'animation 8 secondes  retard 100mx  */
   animation-timing-function: linear;
-  position: absolute;
-  /*display:flex;*/
-  justify-content: center;
-  text-align: center;
   animation-iteration-count: 1;
-  left: 40%;
-  top: 100px;
+  /*left:40%;
+  top:100px; */
   height: 70px;
   width: 70px;
   border-bottom: 10px #4fe94f solid;
@@ -180,7 +183,7 @@ header h1 {
     z-index: 100;
   }
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
   .cube {
     left: 40%;
     top: 500px;
@@ -427,15 +430,17 @@ header h1 {
   font-size: 25px;
   padding-right: 10px;
   width: 24px;
+  margin-bottom: 25px;
   background: none;
   cursor: pointer;
 }
 .Classement:hover .dessus {
-  transition: opacity 0.5s;
-  opacity: 0;
+  transition: color 0.5s ease;
+  color: transparent;
 }
 .Classement:hover .dessous {
   transition: opacity 0.5s;
+  z-index: 1;
   opacity: 1;
 }
 
@@ -444,17 +449,17 @@ header h1 {
   top: 0;
   transition: opacity 0.5s;
   opacity: 1;
-  color: black;
-  font-style: normal;
-  /*opacity:$opacité_coeur;*/
-  /*z-index:   $Z_index_coeur; */
+  color: #9356DC;
 }
 
 .dessous {
   position: absolute;
   transition: opacity 0.5s;
   top: 0;
-  color: blueviolet;
+  background: linear-gradient(217deg, #9356DC, #FF79DA 70.71%), linear-gradient(127deg, #9356DC, #FF79DA 70.71%), linear-gradient(336deg, #FF79DA, #99E2D0 80.71%);
+  /* Background-clip: text;*/
+  -webkit-background-clip: text;
+  color: transparent;
   opacity: 0;
 }
 
@@ -594,18 +599,48 @@ header h1 {
   border-radius: 10px;
   padding: 0px;
   margin: 10px;
+  opacity: 0;
 }
 .choix_menu.animation_menu__t1 {
   animation: animation_menu 500ms 0.1s;
+  animation-fill-mode: forwards;
+  /* permet de maintenir l'animation dans son etat final suit au keyframe*/
 }
 .choix_menu.animation_menu__t2 {
   animation: animation_menu 500ms 0.2s;
+  animation-fill-mode: forwards;
 }
 .choix_menu.animation_menu__t3 {
   animation: animation_menu 500ms 0.3s;
+  animation-fill-mode: forwards;
 }
 .choix_menu.animation_menu__t4 {
   animation: animation_menu 500ms 0.4s;
+  animation-fill-mode: forwards;
+}
+.choix_menu.animation_menu__t5 {
+  animation: animation_menu 500ms 0.5s;
+  animation-fill-mode: forwards;
+}
+.choix_menu.animation_menu__t6 {
+  animation: animation_menu 500ms 0.6s;
+  animation-fill-mode: forwards;
+}
+.choix_menu.animation_menu__t7 {
+  animation: animation_menu 500ms 0.7s;
+  animation-fill-mode: forwards;
+}
+.choix_menu.animation_menu__t8 {
+  animation: animation_menu 500ms 0.8s;
+  animation-fill-mode: forwards;
+}
+.choix_menu.animation_menu__t9 {
+  animation: animation_menu 500ms 0.9s;
+  animation-fill-mode: forwards;
+}
+.choix_menu.animation_menu__t10 {
+  animation: animation_menu 500ms 1s;
+  animation-fill-mode: forwards;
 }
 .choix_menu p {
   font-size: medium;
@@ -727,7 +762,7 @@ header h1 {
   background-color: #99E2D0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 2024px) {
   .Plats {
     width: 33%;
   }
