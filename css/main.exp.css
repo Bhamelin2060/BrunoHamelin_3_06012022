@@ -201,7 +201,6 @@ header h1 {
     opacity: 1;
   }
 }
-
 @font-face {
   font-family: "Shrikhand";
   src: url("../polices/Shrikhand-Regular.otf") format("OPENtype");
@@ -449,7 +448,7 @@ header h1 {
   top: 0;
   transition: opacity 0.5s;
   opacity: 1;
-  color: #9356DC;
+  color: black;
 }
 
 .dessous {
